@@ -3,7 +3,7 @@ let str = "hi hello the beautiful world of Bob!";
 str.length //length of a string starts from 1
 str.toUpperCase(); //uppercase
 str.toLowerCase(); //lowercase
-str.includes("hi"); //bool return
+str.includes("hi", 3); //bool return, start search from index 3, starts from in 0
 str.startsWith("hi");
 str.endsWith("Bib!");
 str.indexOf("h"); //counts forwards

@@ -70,7 +70,7 @@ const nodeList = document.querySelectorAll("p");
 // 2. Turn it into an Array
 const myArr = [...nodeList];
 
-// Now you can use array-only methods! -> cause you couldn't before with a NodeList
+// Now you can use array-only methods! -> cause you couldn't before with a NodeList veq foreach
 myArr.map(p => p.innerText);
 */
 

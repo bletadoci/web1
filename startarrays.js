@@ -1,5 +1,7 @@
 //this file has stringify, parse, arrays, forloops specific, hashmaps and some very random things
 
+//no difference between "" and ''
+
 //you add js on a <script src="javascript.js"></script>
 
 var  oldName = "avoid this"   // function-scoped, hoisted - bon

@@ -29,4 +29,7 @@ console.log(namesArray); // Output: ["Ben", " Ana", " Leo"]
 /*Pro Tip: Users often add accidental spaces. You can clean them up using map and trim:
 let cleanArray = input.split(",").map(item => item.trim());*/
 
-//Number.isInt(), Number.parseInt -> from string to int
+//Number.isInt(), Number.parseInt -> from string to int - NOT for arrays/objects, unless
+//you iterate
+
+//.innerHTML, .innerText, .value

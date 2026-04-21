@@ -57,6 +57,24 @@ $("something").dbclick( function(){}); //db onclick do something BRO
 $("something").animate({width: '200px',
     opacity: '0.5'
 }, "slow"); //first attr is the change, 2nd is the speed
+//osht edhe njo .on('click':function(){});
+$("something").focus( function(){}); //the one that user is focusing on
+$("something").change( function(){}); //when value is modified
+$("something").blur( function(){});
+$("something").mouseenter( function(){});
+$("something").mouseleave( function(){});
 
+//js way:
+btn.addEventListener('click', () => { //
+  console.log('Clicked!');
+});
 
+const input = document.querySelector('input');
+
+input.addEventListener('input', (event) => {
+  // event.target is the <input> element itself
+  console.log(event.target.value); //get value inside the input per input/textbox/select
+});
+//ose mundesh me React event inside tags <button onClick = {function}></button> -> krejt kto
+//dbclick, focus, etc etc bohen on(name) in HTML
 
