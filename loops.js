@@ -14,7 +14,8 @@ for (const key in scores) { //si njava bre
 //dont need index/key? -> get val immediately also can be used with object.entries/values/keys
 for (const student of students) {
     console.log(student);
-}
+} //ose spef for obj attr console.log(student.id)
+//ose const {id, name} of students -> basically obj
 
 //while, do while jon njejt
 
