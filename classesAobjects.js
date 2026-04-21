@@ -67,3 +67,24 @@ const array ={
   emri: "Hi",
   mosha: 22
 };
+
+//inheritance
+class A{
+   a = 0; //init like this, you dont have to
+   #c=0; //this is a private variable
+   _d; //protected
+  constructor(a, c, d){
+    this.a = a;
+    this.#c = c;
+    _this.d=d;
+  }
+  login(){ //si thu function
+    console.log("Hello.");
+  }
+}
+class B extends A{
+  constructor(a, c, d, b){
+    super(a,c,d,b);
+    this.b =b;
+  }
+}

@@ -64,6 +64,7 @@ $("something").blur( function(){});
 $("something").mouseenter( function(){});
 $("something").mouseleave( function(){});
 
+
 //js way:
 btn.addEventListener('click', () => { //
   console.log('Clicked!');

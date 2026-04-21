@@ -43,4 +43,4 @@ export default function Profile() {
 
 //if you call a function from the inside onClick = {function} //do this while click
 //if you call it <p>Hello {function()}</p> //do this while loads
-<button onClick={() => handleClick(userId)}>Click</button>
+<button onClick={(userId) => handleClick(userId)}>Click</button>
