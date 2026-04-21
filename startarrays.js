@@ -1,6 +1,13 @@
+//this file has stringify, parse, arrays, forloops specific, hashmaps and some very random things
+
+//you add js on a <script src="javascript.js"></script>
+
 var  oldName = "avoid this"   // function-scoped, hoisted - bon
 let   score   = 42            // block-scoped, reassignable - sbon me perdor para se me definu
 const PI      = 3.14          // block-scoped, can't reassign
+
+//getElementById
+document.getElementById("demo") //this basically gets an html element by id, usually input, so if youre trying to get user input this is how
 
 //`${x}` -> nje var brenda nje funct nese don me marr se osht let edhe const, also nese don me
 //si string mi print
@@ -14,7 +21,7 @@ console.log(`Hello Bob: ${math}`) //per var si let edhe const
 const vargu1 = ["nje","dy","tre"];
 
 //vargjet asociative -- objekte/hashmap smundesh me push se sosht array
-const asociativ = {
+const asociative = {
     "Lenda1" : 9,  
     "Lenda2" : 7
 }
@@ -32,10 +39,9 @@ const scores = { Math: 9, Science: 7 };
 for (const key of Object.keys(scores)) {
     console.log(key); // Prints: Math, Science
 }
-const scores = { Math: 9, Science: 7 };
 
-for (const key of Object.values(scores)) {
-    console.log(`${key}`); // Prints: Math, Science 
+for (const value of Object.values(scores)) { //ose per key, value const [key, value] of Object.entries()
+    console.log(`${value}`); // Prints: Math, Science 
 }
 
 console.log(asociativ["Lenda1"]) //give value attached
@@ -65,7 +71,7 @@ matrica[4] = [4,4,4] //-> other way of saying push this at the end or replaces, 
 console.log(matrica[4][0])
 //; needed when console.log(); console.log(); -> me ni 
 
-//stringify
+//stringify - turns obj
 console.log("Students: ", JSON.stringify(students, null, 4));  // JSON.stringify(value, replacer, space)
 console.log("Student id-s: ", studentIds.toString());
 //stringify basically (qkado, qetu basically e qet qa po don specifikisht me output: ['lenda1'], spaces)
@@ -79,6 +85,7 @@ const user = {
   level: 5,
   password: "secret_password_123",
   active: true
+  //output: funct() -> munesh edhe funksione me bo map
 };
 
 // 1. Value: 'user'

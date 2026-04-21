@@ -6,12 +6,12 @@ for(let i = 0; i<10; i++){
 
 //forloops for hashmaps
 
-for (const key in scores) {
+for (const key in scores) { //si njava bre
     const value = scores[key]; // Use the key to get the value
     console.log(`${key}: ${value}`);
 }
 
-//dont need index?
+//dont need index/key? -> get val immediately also can be used with object.entries/values/keys
 for (const student of students) {
     console.log(student);
 }
@@ -39,12 +39,12 @@ const students = [
 // foreach(name, index) -> default (_, i) -> dont need name only index
 
 //if you want to print key AND value in an object array
-const students = [
+const studente = [
     { id: 1, name: "Alice" },
     { id: 2, name: "Bob" }
 ];
 
-students.forEach(student => {
+studente.forEach(student => {
     // You can print specific keys
     console.log(`ID: ${student.id}, Name: ${student.name}`);
     
