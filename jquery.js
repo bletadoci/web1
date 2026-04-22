@@ -19,12 +19,15 @@ $(":checked"); //only checkboxes that are checked by the user
     console.log("User checked the box!");
 }  -> basically is it checked right now?*/
 $(":disabled"); //elements that users can't click (greyed out)
+$(":active");
+$(":visited");
 $(":focus"); //element user is currently typing in
 $(":file"); //input type file
 $(":input"); //A "catch-all" that selects <input>, <textarea>, <select>, and <button></button>
 $("tag:has(p)"); //all tags with a p in them
 $("tag:empty"); //all tags that are empty
 $("tag:contains('Hi')"); //all tags with the word hi in them
+$("::first-line"); //first-letter, first-child
 
 //jQuery functions:
 $("something").hide(); //hides everything that was mentioned

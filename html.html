@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" name="author" content="something">
+        <title></title>
     </head>
     <body>
         <i><em></em></i> <!-- italic, both of them-->
@@ -10,9 +11,10 @@
         <small></small>
         <sub></sub> <!-- posht-->
         <sup></sup> <!-- nalt-->
-        <a href="adresa">emri_linkut</a> <!-- mundesh other page/site/specific part: #top, specific link.html#reviews part on another page-->
-        <!-- tani tel: tel_nr-->
+        <a href="adresa" target="_blank">emri_linkut</a> <!-- mundesh other page/site/specific part: #top, specific link.html#reviews part on another page-->
+        <!-- tani tel: tel_nr, per target(_blankme qel ni new window, _self me qel the same one-->
          <img src="fotografia.png" width="24" height="45">
+         <script src="myjs.js"></script>
          <!-- listat:-->
           <ol style="list-style-type: lower-alpha"><li></li></ol> <!-- ordered, lower-alpha is alphabet, we have upper-alpha--> 
           <!--and then lower-roman, upper-roman-->
@@ -27,9 +29,47 @@
           <section></section> <!-- ma e mir se div masi e kupton ma mir struct idk bro im tired-->
           <figure><img><figcaption></figcaption></figure>
           <aside></aside> <!--veq aside bro-->
-          <link> <!--prsh kur don me shtu bootstrap-->
+          <link> <!--prsh kur don me shtu bootstrap ose css files-->
+          <link rel="stylesheet" href="mycss.css">
 
           <!--RGBA(red, green, blue, alpha) alpha is transparency-->
           <!--HSLA(hue, saturation, lightness, alpha)=> hue 0-360(0=red, 120=green, 240=blue), sat. 0%-100%, light. 0%-100%-->
+
+
+          <!--tables-->
+          <table>
+            <thead><tr><th></th></tr></thead>
+            <tbody>
+                <tr><td></td></tr>
+            </tbody>
+          </table>
+
+          <!--forms-->
+          <form method="GET" action="my.php">
+            <fieldset>
+            <legend>Hello form</legend>
+            <input type="text" placeholder="shkruaj" readonly> <!--maxlength ="10", size="40", disabled-->
+            <input type="radio" value="Mashkull" name="diqka">
+            <input type="checkbox" value="Mashkull">
+            <input type="password">
+            <input type="submit"> <!--button inputs-->
+            <input type="reset">
+            <input type="date">
+            <input type="datetime-local" required> <!--bashk me kohe-->
+            </fieldset>
+          </form>
+
+          <!--select(drop-down-list), mrena ni form-->
+          <form>
+          <select multiple> <!--sa dush munet mi zgjedh-->
+            <option value="Hi.."></option>
+          </select>
+          </form>
+
+          <!--textarea -> mrena ni form-->
+          <form><textarea placeholder="Hello guy" rows="10" cols="30"></textarea></form> <!--nvend rows, cols mundesh: width, height-->
+
+          <!--buttoni :3-->
+          <button type="button" onclick="alert('Hello World')"></button>
     </body>
 </html>

@@ -1,1 +1,44 @@
-/* selector{property: value}*/
+/* selector{property: value}
+color: red !importat -> per mi jep perparesi
+
+selektori fqinje: + (i pari fqinje), ~ (the ones next to it)
+pasardhes: a > b (direct descendant)
+
+munesh mi jep vet elementeve ni prsh: title ="diqka", emri ="diqka" edhe tani ncss me e bo [emri]{} -> change stuff*/
+@font-face{
+    font-family: Hi;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+} /*bone vet ni font ig*/
+
+/*pozition*/
+figure img{
+    position: relative; /* if this were in the normal flow show where it would be relatively*/
+}
+/*position: absolute -> not on flow, it'll be put anywhere on top ig
+position: fixed -> doesn't matter if user scrolls, it stays in one place
+position:static -> default*/
+
+/*transformimet
+transform: rotate(45deg);
+transform: skew(-20deg) -> like e bon tilt si nifar forme
+transform: translatex(100px) translatey(-20px) -> y osht posht bosht koord, perdoret per me move ni sen i suppose
+transform: scale(0.5) -> like basically bone ma tvogel ma tmadhe, ki scalex(), scaley() etj.
+
+//media print, all, speech, screen
+@media screen and (min-width: 320px) and (max-width: 480px){*/
+
+/*grid and flex*/
+.prindi {
+  display: flex;
+  justify-content: space-between; /* I shpërndan elementet maksimalisht majtas-djathtas */
+  align-items: center;            /* I mban të gjithë në mes vertikalisht */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* Kolona 1: e fiksuar, Kolona 2: merr pjesën tjetër */
+  grid-template-rows: 100px auto;   /* Rreshti 1: lartësia 100px, Rreshti 2: sa ka nevojë */
+  /*ose veq place-items: center;*/
+  gap: 20px;                        /* Hapësira mes "kuadrateve" */
+}
