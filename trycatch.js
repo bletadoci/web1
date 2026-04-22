@@ -7,7 +7,8 @@ console.error( error );
 try {
 var x = -1;
 if (x<0) {
-throw "smallerthan0Error"; //ok bro just throwing anything i guess
+throw "smallerthan0Error"; //ok bro just throwing anything i guess -> qitu munet mu kon edhe throw new Error("message")
+//err.message(Message), err.name(Error)
 }
 }
 catch(err) {

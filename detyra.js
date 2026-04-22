@@ -24,10 +24,10 @@ button.addEventListener('click', ()=>{ //mrena kllapave qitet veq nese je tu das
     if(!(innumer % 5 == 0)){
         alert("Hello.");
     }
-    elif(hi === "b" || hi === "c"){
+    else if(hi === "b" || hi === "c"){
         alert("Hello again.");
     }
-})
+});
 
 /*Është dhëne vargu i stringjeve : [ ‘Uebi I’ , ‘Uebi II’, ‘Programimi i shperndare’,
 ‘Bazat e te dhenave’]. Krijoni një varg te ri i cili i ka të sortuara për nga gjatësia e stringut
@@ -51,3 +51,70 @@ const mesatarja = shuma / gjatesite.length;
 console.log("Vargu i sortuar (descending):", varguSortuar);
 console.log("Vargu i gjatësive:", gjatesite);
 console.log("Gjatësia mesatare:", mesatarja);
+
+/*Të krijohet një komponente ne React e quajtur MessageBox qe shfaq një tekst të caktuar brenda
+një elementi p dhe përdor një stil bazik për të ndryshuar ngjyrën e tekstit. Komponenti duhet të
+përdoret të paktën një herë brenda komponentit kryesor App.*/
+function MessageBox(props){
+    const stiliTekstit = {
+        color: props.ngjyra,
+        fontSize: '18px'
+    }
+    return (
+        <p style={stiliTekstit}>{props.teksti}</p>
+    );
+};
+//export default MessageBox
+
+function Appi(){
+    return(
+        <MessageBox color="red" teksti="Hello Guys."/>
+    )
+}
+
+// Funksion ndihmës që kthen një Promise që zgjidhet pas 'ms' milisekondave
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function start() {
+    // 1. Pret 3 sekonda (3000ms)
+    await delay(3000); //resolve waits for the timer to be done, sends back signal and continues code
+    
+    // 2. Shtyp mesazhin në ekran (ose console)
+    console.log("Funksioni filloj se ekzekutuari");
+    document.body.innerHTML = "<h1>Funksioni filloj se ekzekutuari</h1>";
+
+    // 3. Pret edhe 2 sekonda të tjera (2000ms)
+    await delay(2000);
+
+    // 4. Ndryshon lokacionin e faqes
+    window.location.href = 'https://uni-pr.edu/';
+}
+
+// Thirrja e funksionit
+start();
+
+//window.location.href ="url" -> ose munesh me marr url qeshtu
+
+function redirect() {
+    // setTimeout pranon dy gjëra: funksionin që do kryhet dhe kohën në milisekonda
+    setTimeout(function() {
+        // Kjo ndodh pas 5 sekondave (5000ms)
+        window.location.href = 'https://uni-pr.edu/';
+    }, 5000);
+}
+
+// Thirrja e funksionit
+redirect();
+
+//Det
+const zv = "Hello Bob, you are awesome!";
+let vargi = zv.split(""); 
+
+for (const i in vargi) {
+    if (!(i % 2 === 0)) {
+        vargi[i] = "*";
+    }
+}
+const rezultati = vargi.join("");
+console.log(rezultati);
+
